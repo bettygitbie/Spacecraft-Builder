@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  margin: 25px;
+}
+textarea {
+  height: 15vh
+}
+.name {
+  background-color: black;
+  color: white
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#name, #qty, #purpose, #chkBox, .ItemCard {
+  background-color: black;
+  color: white;
+  display:block;
+  margin: 15px 0;
+  border: 1px whitesmoke solid;
+  padding: 5px;
+  width: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#addBtn {
+  float: right;
+  margin-right: -10px;
+  background-color: black;
+  color: white;
+  padding: 5px 25px;
+  border: 1px greenyellow solid;
+  cursor: pointer;
+}
+.ItemCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.deleteBtn {
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  margin: 5px;
+  padding: 5px 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.error {
+  color: red;
 }
